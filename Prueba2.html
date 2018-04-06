@@ -1,0 +1,42 @@
+<HTML>
+<HEAD>
+<SCRIPT LANGUAJE="Javascript">
+ function calcula(form) {
+ if (confirm("¿Está seguro?"))
+ form.resultado.value = eval(form.expr.value)
+ else
+ alert("Vuelva a intentarlo...")
+ }
+</SCRIPT>
+</HEAD>
+<style>
+div{
+  padding: 50;
+  margin: 50;
+}
+body{
+  background-color: #aaaaaa;
+}
+</style>
+<BODY>
+  <div></div>
+<table border =1; bgcolor=#04aa60 align="center">
+<FORM>
+  <td align="center">
+ Introduzca una expresión:
+ <INPUT TYPE="text" NAME="expr" SIZE=15>
+ </td>
+   <br>
+   <td>
+ <INPUT TYPE="button" NAME="Boton" VALUE="Calcular" ONCLICK="calcula(this.form)">
+ </td>
+ <br> <br>
+ <td>
+ Resultado:
+ <INPUT TYPE="text" NAME="resultado" SIZE=15>
+ <br>
+ </td>
+</FORM>
+</table>
+</BODY>
+</HTML>
